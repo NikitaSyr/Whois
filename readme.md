@@ -20,7 +20,7 @@ o.close()
 
 Модифицируя этот код можно настроить его для работы с whois
 
-Код указан в отдельном md файле для удобства: https://github.com/NikitaSyr/Whois/blob/master/code.md
+[Код указан в отдельном md файле для удобства](https://github.com/NikitaSyr/Whois/blob/master/code.md)
 
 В результате, код выдаёт ошибку, так как все библиотеки whois для python 3 просто не работают
 
@@ -35,7 +35,8 @@ AttributeError                            Traceback (most recent call last)
 AttributeError: 'dict' object has no attribute 'whois'
 ```  
 
-Поэтому воспользуемся ручным вводом. Для этого нам понадобиться более удобный список доменов начинающихся на https:
+Поэтому воспользуемся ручным вводом. Для этого нам понадобиться более удобный список доменов начинающихся на https. Так же 
+отсортируем 
 
 ```python
 import re
@@ -59,4 +60,6 @@ for item in domain_list:
 fileout.close()
 
 ```  
+
+
 
