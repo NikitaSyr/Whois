@@ -37,6 +37,7 @@ AttributeError: 'dict' object has no attribute 'whois'
 
 Поэтому воспользуемся ручным вводом. Для этого нам понадобиться более удобный список доменов начинающихся на https. Так как библиотеки whois для python мертвы - восьпользуемся костылями. Для этого создадим простой цикл, который будет выдавать нужные домены из списка. На сайте REG.ru есть возможность проверять единовременоо до 500 доменов на занятость. Будем вручную выбирать по 500 доменов из ~9300
 
+Пример вывода списка из доменов с 500 до 1000-го с помощью обновлённого кода
 ```python
 import re
 import whois
@@ -52,9 +53,10 @@ for line in filename:
 d = 0
 for item in domain_list:
     d = d + 1
-    domain=urlparse(item)
-    fileout.write(domain.netloc+'\n')
-    print(domain.netloc)
+    if (d > 500) and (d < 1000): 
+        domain=urlparse(item)
+        fileout.write(domain.netloc+'\n')
+        print(domain.netloc)
     
 fileout.close()
 
