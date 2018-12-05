@@ -35,3 +35,28 @@ AttributeError                            Traceback (most recent call last)
 AttributeError: 'dict' object has no attribute 'whois'
 ```  
 
+Поэтому воспользуемся ручным вводом. Для этого нам понадобиться более удобный список доменов начинающихся на https:
+
+```python
+import re
+import whois
+from urllib.parse import urlparse
+
+filename= open("too.txt","r")
+fileout = open('result.txt', 'w')
+pattern = re.compile('https:[\/0-9a-zа-я\.\-_]+')
+domain_list=list()
+
+for line in filename:
+    domain_list.extend(pattern.findall(line))
+d = 0
+for item in domain_list:
+    d = d + 1
+    domain=urlparse(item)
+    fileout.write(domain.netloc+'\n')
+    print(domain.netloc)
+    
+fileout.close()
+
+```  
+
