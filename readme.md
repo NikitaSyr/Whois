@@ -72,11 +72,15 @@ fileout.close()
 
 С помощью сервиса[seocafe](http://info.seocafe.info/tools/massdomcheck/) мне удалось запустить долгую проверку всех 9338 доменов. Так же этот сервис отбросил дубликаты доменов, сократив общее число для поиска до 3984. Почти сразу мне удалось увидеть свободный для регистрации домен!
 
-![](https://pp.userapi.com/c845520/v845520006/14c36c/qkKgwUHQP9s.jpg)
+![zerkalo-tomsk.ru](https://pp.userapi.com/c845520/v845520006/14c36c/qkKgwUHQP9s.jpg)
 
 Ещё сайт, доступный для регистрации:
 
-![](https://pp.userapi.com/c845520/v845520006/14c37e/gQ3DayPpZNM.jpg)
+![ecstasymusic.ru](https://pp.userapi.com/c845520/v845520006/14c37e/gQ3DayPpZNM.jpg)
+
+Ещё сайт, только уже в зоне .com:
+
+![frankmoneyslots.com](https://pp.userapi.com/c845522/v845522489/14c396/IUBjUcHn6Zw.jpg)
 
 Процесс работы:
 
