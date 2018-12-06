@@ -44,7 +44,6 @@ AttributeError: 'dict' object has no attribute 'whois'
 
 ```python
 import re
-import whois
 from urllib.parse import urlparse
 
 filename= open("too.txt","r")
